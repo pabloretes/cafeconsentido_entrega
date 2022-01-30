@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+@import 'variables';
+@import 'footer';
+
+
+// Maps
+$botonera: (
+  'contactanos': $Congress-Blue,
+  'talleres': $gris-mediterraneo,
+  'formulario': $Celestial-Blue,
+);
+
+@each $key, $val in $botonera {
+  .btn-#{$key} {
+    background: $val;
+    color: white;
+    padding: 5px 20px;
+    font-size: x-large;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+  }
+}
+
+@each $key, $val in $botonera {
+  .btn-#{$key}:hover {
+    color: white;
+    background: $Eggshell-Brown;
+  }
+}
+
+// Fin Maps
+
+// Mixin
+@mixin size-content-img($w_h) {
+  width: $w_h;
+  height: $w_h;
+}
+// Fin Mixin
+
+//extend
+.titularPagina {
+  font-size: 3rem;
+  color: $Congress-Blue;
+  padding: 15px;
+}
+
+.subTitularPagina {
+  font-size: 1.5rem;
+  color: $gris-mediterraneo !important;
+}
+
+.titularPagina--center {
+  @extend .titularPagina;
+  text-align: center;
+}
+
+.subTitularPagina--center {
+  @extend .subTitularPagina;
+  text-align: center;
+}
+//Fin extend
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* menu */
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+
+ #menu a{
+     color:$Brown-Sugar;
+     
+ }
+
+ nav li a:hover {
+    background: $Brown-Sugar !important;
+    color: white !important;
+  }
+
+  .navbar-brand {
+    color: $Brown-Sugar !important;
+    font: {
+      family: 'Italianno', cursive;
+      size: 60px !important;
+    }
+  }
+
+  
+  
+ 
+/* Carrusel */
+.carousel-inner {
+    max-height:39rem !important;
+}
+
+
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+.carousel-inner {
+    .carousel-item {
+      .carousel-caption {
+        background: darkgoldenrod;
+        opacity: 0.6;
+        color: white;
+      }
+    }
+  }
+  
+
+/* Otras customizaciones */
+.img-fluid-logo {
+    width: 200px;
+  }
+
+  .quienessomos-img {
+    max-width: 300px;
+  }
+
+  .content-img {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+    @include size-content-img(300px);
+  }
+  
+  .card-img-top {
+      max-height: 220px;
+  }
+
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.mapa {
+    background: url(../img/mapa.png);
+    width:100%;
+    height:500px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+/*===========================SECCION EQUIPO MIAMI==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-local p{
+    margin:0;
+}
+
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+    position:relative;
+    top: -130px;
+} 
+
+ #seccion-contacto{
+    background-color: #1b2a4e;
+    min-height:500px;
+    position:relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+    
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+
+
+
+/*=========================FOOTER================================*/
+
+footer {
+    background: $Brown-Sugar;
+    min-height: 80px;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}

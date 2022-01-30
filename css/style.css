@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+footer {
+  background: -webkit-gradient(linear, left top, right top, from(#2191D0), color-stop(#01D7D9), to(#EAE5D2));
+  background: linear-gradient(90deg, #2191D0, #01D7D9, #EAE5D2);
+  color: white;
+  text-align: center;
+  height: 50px;
+  padding: 10px;
+}
+
+.btn-contactanos {
+  background: #004290;
+  color: white;
+  padding: 5px 20px;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-talleres {
+  background: #777;
+  color: white;
+  padding: 5px 20px;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-formulario {
+  background: #2191D0;
+  color: white;
+  padding: 5px 20px;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-contactanos:hover {
+  color: white;
+  background: #EAE5D2;
+}
+
+.btn-talleres:hover {
+  color: white;
+  background: #EAE5D2;
+}
+
+.btn-formulario:hover {
+  color: white;
+  background: #EAE5D2;
+}
+
+.titularPagina, .titularPagina--center {
+  font-size: 3rem;
+  color: #004290;
+  padding: 15px;
+}
+
+.subTitularPagina, .subTitularPagina--center {
+  font-size: 1.5rem;
+  color: #777 !important;
+}
+
+.titularPagina--center {
+  text-align: center;
+}
+
+.subTitularPagina--center {
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* menu */
+#menu a, button {
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+#menu a {
+  color: #AF9A7D;
+}
+
+nav li a:hover {
+  background: #AF9A7D !important;
+  color: white !important;
+}
+
+.navbar-brand {
+  color: #AF9A7D !important;
+  font-family: 'Italianno', cursive;
+  font-size: 60px !important;
+}
+
+/* Carrusel */
+.carousel-inner {
+  max-height: 39rem !important;
+}
+
+#img-equipo {
+  max-height: 30rem !important;
+  width: 50%;
+}
+
+.carousel-inner .carousel-item .carousel-caption {
+  background: darkgoldenrod;
+  opacity: 0.6;
+  color: white;
+}
+
+/* Otras customizaciones */
+.img-fluid-logo {
+  width: 200px;
+}
+
+.quienessomos-img {
+  max-width: 300px;
+}
+
+.content-img {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10%;
+  width: 300px;
+  height: 300px;
+}
+
+.card-img-top {
+  max-height: 220px;
+}
+
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+  margin-top: 50px;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 300px;
+}
+
+.mapa {
+  background: url(../img/mapa.png);
+  width: 100%;
+  height: 500px;
+}
+
+.wrapper-local {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+/*===========================SECCION EQUIPO MIAMI==================================*/
+#numeros-local {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#numeros-local div {
+  padding: 0 20px 0 0;
+  text-align: left;
+  height: 48px;
+}
+
+#numeros-local div:not(:last-child) {
+  border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+  padding-left: 20px;
+}
+
+#numeros-local p {
+  margin: 0;
+}
+
+/*=========================CONTACTOS BACKGROUND================================*/
+#bg-contactos {
+  position: relative;
+  top: -130px;
+}
+
+#seccion-contacto {
+  background-color: #1b2a4e;
+  min-height: 500px;
+  position: relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+#contenedor-formulario {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fbfafa;
+  border-radius: 5px;
+}
+
+#titulo-formulario {
+  color: #3f3f3f;
+}
+
+/*=========================FOOTER================================*/
+footer {
+  background: #AF9A7D;
+  min-height: 80px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+@media (max-width: 1200px) {
+  #intro, #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+  #local {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+@media (max-width: 768px) {
+  #intro, #equipo {
+    width: 90% !important;
+    margin: auto;
+  }
+  #img-equipo {
+    max-height: 20rem !important;
+    width: 90%;
+  }
+  .wrapper-local {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  #local {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mapa img {
+    width: 100%;
+    height: auto;
+  }
+  #bg-contactos {
+    top: -120px;
+  }
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+@media (max-width: 576px) {
+  #servicios-fila-2 {
+    width: 100% !important;
+  }
+  #servicios-fila-1 {
+    width: 100% !important;
+  }
+  .icono-wrap {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
